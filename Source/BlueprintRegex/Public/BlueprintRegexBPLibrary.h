@@ -11,13 +11,13 @@ struct FRegexMatch
 	GENERATED_BODY()
 
 public:
-	UPROPERTY(BlueprintReadOnly, VisibleAnywhere)
-	int32 Index;
+	UPROPERTY(BlueprintReadOnly, VisibleAnywhere, Category="RegEx")
+	int32 Index = 0;
 
-	UPROPERTY(BlueprintReadOnly, VisibleAnywhere)
-	int32 Lenght;
+	UPROPERTY(BlueprintReadOnly, VisibleAnywhere, Category="RegEx")
+	int32 Length = 0;
 
-	UPROPERTY(BlueprintReadOnly, VisibleAnywhere)
+	UPROPERTY(BlueprintReadOnly, VisibleAnywhere, Category="RegEx")
 	FString Value;
 };
 

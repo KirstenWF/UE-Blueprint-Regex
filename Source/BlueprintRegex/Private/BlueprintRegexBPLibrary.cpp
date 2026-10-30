@@ -37,8 +37,8 @@ TArray<FRegexMatch> UBlueprintRegexBPLibrary::Matches(FString Input, FString Pat
 	{
 		FRegexMatch Match;
 		Match.Index = Matcher.GetMatchBeginning();
-		Match.Lenght = Matcher.GetMatchEnding() - Match.Index;
-		Match.Value = Input.Mid(Match.Index, Match.Lenght);
+		Match.Length = Matcher.GetMatchEnding() - Match.Index;
+		Match.Value = Input.Mid(Match.Index, Match.Length);
 
 		Result.Add(Match);
 	}
